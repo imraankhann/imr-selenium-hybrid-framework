@@ -37,13 +37,13 @@ public class movieSelectionTest extends BaseClass {
 		
 		MovieSelection movie = new MovieSelection(driver);
 		movie.citysearchClear();
-		movie.SendCityName("Pu");
+		movie.SendCityName("Bengalu");
 		Thread.sleep(3000);
 		movie.SendEnterKeys(Keys.ENTER);
 		
 		 movie.ExploreMovies();
 		
-		String urlTest="https://in.bookmyshow.com/explore/movies-pune";
+		String urlTest="https://in.bookmyshow.com/explore/movies-bengaluru";
 		String GetUrl=driver.getCurrentUrl();
 		if(urlTest.equalsIgnoreCase(GetUrl)) {
 			
